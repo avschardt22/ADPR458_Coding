@@ -1,14 +1,40 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
-body {
-    background-color: #fff;
+*{
     font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0px 10%;
+    font-family: sans-serif;
+    background-image: url("../images/bg.png");
+}
+
+/****** Layout ******/
 .container {
-    width: 960px;
+    background-color: #fff;
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr);
+    width: min(95%, 75em);
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container *{
+    grid-column: span 12;
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 40em) {
+    .col-span-8 {
+        grid-column: span 8;
+    }
+    .col-span-4 {
+        grid-column: span 4;
+    }
 }
 
 header {
@@ -20,7 +46,7 @@ header {
 
 h1 {
     text-transform: uppercase;
-    font-size: 48;
+    font-size: clamp(32px, 4vw, 48px);
 }
 
 h2 {
@@ -31,10 +57,27 @@ h3 {
     font-size: 24px;
 }
 
-aside img {
+img {
+    width: 100%;
+}
+
+img.circle {
     width: 180px;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 999px;
     border: 6px solid darkolivegreen;
 }
+
+/****** Navigation ******/
+
+#nav-menu li a {
+    color: blue;
+}
+
+.menu-items li a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
