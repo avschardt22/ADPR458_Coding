@@ -26,8 +26,40 @@ body {
     grid-column: span 12;
 }
 
+/* Button Styles */
+
+a.button {
+    display: block;
+    min-width: 200px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #819171;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+a.button:hover {
+    background-color: #9caa8e;
+}
+
+a.button:active {
+    background-color: #606c53;
+}
+
+a.button:visited {
+
+}
+
 /* Desktop Layout */
+
 @media screen and (min-width: 40em) {
+    a.button {
+        display: inline-block;
+    }
     .col-span-8 {
         grid-column: span 8;
     }
@@ -38,7 +70,7 @@ body {
 
 header {
     text-align: left;
-    background-color: darkolivegreen;
+    background-color: #819171;
     color: #fff;
     padding: 30px 40px;
 }
@@ -56,6 +88,10 @@ h3 {
     font-size: 24px;
 }
 
+aside {
+    text-align: center;
+}
+
 img {
     width: 100%;
 }
@@ -65,7 +101,7 @@ img.circle {
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 999px;
-    border: 6px solid darkolivegreen;
+    border: 6px solid #819171;
 }
 
 /****** Navigation ******/
