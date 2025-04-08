@@ -100,6 +100,26 @@ img.circle {
 
 #toggle-button {
     margin-left: auto;
+    background-color: #819171;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.125em;
+    transition: 0.2s all;
+}
+
+#toggle-button:hover,
+#toggle-button:focus {
+    background-color: #90a17e
+
+}
+
+#toggle-button:focus {
+    background-color: #373d31
+
 }
 
 #nav-menu ul.active + #toggle-button {
@@ -202,5 +222,14 @@ a.button:visited {
 
     .card {
         flex: 0 1 324px;
+    }
+}
+
+/* Mobile Functionality */
+@media (max-width: 40em) {
+
+    #nav-menu ul.active {
+        display: flex;
+        flex-direction: column;
     }
 }

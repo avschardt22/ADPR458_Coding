@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+*{
+    font-family: "Sofia Sans Condensed", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    line-height: 1;
+    background: #f3f3f3;
+    font-weight: 600;
+  }
+
+/****** Navigation ******/
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /****** Hero Header ******/
+  .hero-content {
+    max-width: 600px;
+    margin: auto;
+    padding-top: 5rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /****** Explore Section ******/
+  .explore {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .explore-text {
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr);
+    width: min(100%, 100em);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .explore-text h2 {
+    grid-column: span 6;
+    text-align: left;
+    font-size: 4rem;
+    letter-spacing: -.05em;
+    margin-bottom: 1rem;
+  }
+  
+  .explore-text span {
+    color: #333;
+  }
+
+  .explore-text-left {
+    grid-column: span 4;
+    text-align: left; 
+    font-size: .7rem;
+  }
+
+  .explore-text-right {
+    grid-column: span 2;
+    text-align: left;
+    font-size: .7rem;
+    text-transform: uppercase;
+    color: #777;
+  }
+  
+  .explore-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .explore-grid img {
+    display: flex;
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+
+  
+  
+  .quote {
+    width: 50%;
+    padding: 2rem;
+    text-align: left;
+    font-style: italic;
+    font-size: 2rem;
+  }
+  
+  /****** Booking Seciton ******/
+  .booking-section {
+    background-image: url(../Images/mountain.png);
+    padding: 1.5rem
+}
+  .booking {
+    padding: 2rem 2rem;
+    text-align: left;
+    background-color: #fff;
+  }
+  
+  .booking form-top, form-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .input-pair {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .booking input {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  
+  .booking button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  
+  /****** Gallery ******/
+  .gallery {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: left;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  
+  .gallery-grid img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .gallery h3 {
+    font-size: 4rem;
+    text-align: left;
+    letter-spacing: -.1rem;
+  }
+
+  .gallery button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 40rem;
+    justify-content: center;
+    display: flex;
+    border-radius: 4px;
+  }
+  
+  /****** Highlight ******/
+  .highlight {
+    align-items: center;
+    padding: 3rem 2rem;
+    background: #fafafa;
+    text-align: center;
+  }
+  
+.highlight-text {
+    text-align: left;
+    width: 27rem;
+    grid-column: span4;
+
+}
+
+  .highlight-text h4 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+
+  }
+  
+  a.button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .highlight img {
+    margin-top: 2rem;
+    max-width: 95%;
+    width: 50%;
+    justify-content: right;
+  }
+  
+  .closer {
+    padding: 10rem;
+    color: #333;
+    text-align: left;
+    font-size: 1.75rem;
+  }
+
+/****** Article Heading ******/
+.article-header h1 {
+  font-size: 3rem;
+  padding: 10rem;
+}
+
+/****** Intro ******/
+.intro {
+  font-size: 1.5rem;
+}
+
+/****** Safari Items ******/
+  .safari-list {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  
+  .safari-item {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .safari-item h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .safari-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .safari-item h4 {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .safari-item ul {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+
+  @media (min-width: 40em) {
+    .gallery-grid {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+  }
