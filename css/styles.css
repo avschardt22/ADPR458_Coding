@@ -175,6 +175,18 @@ img.nav-logo {
     padding: 20px 20px;
 }
 
+.container3 {
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(12, 1fr);
+    width: min(95%, 75em);
+    margin: 0 auto;
+    padding: 20px 20px;
+
+    background-color: #394c39;
+    box-shadow: 0 0 36px -12px rgba (96, 108, 83, 0.35);
+}
+
 .container > * {
     grid-column: span 12;
     padding-inline: 20px;
