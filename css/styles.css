@@ -29,7 +29,6 @@ header {
 h1 {
     font-family: "DM Serif Display", serif;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     font-size: clamp(32px, 4vw, 48px);
 }
 
@@ -37,6 +36,13 @@ h2 {
     font-family: "Oooh Baby", sans-serif;
     font-size: 36px;
     color: #fffdf3;
+}
+
+h4 {
+    font-family: "DM Serif Display", serif;
+    font-size: 36px;
+    color: #394c39;
+    text-align: center;
 }
 
 h3 {
@@ -50,6 +56,8 @@ aside {
     padding-top: 20;
 }
 
+/****** Images ******/
+
 img {
     width: 100%;
 }
@@ -57,7 +65,7 @@ img {
 img.home {
     object-fit: fill;
     border-radius: 0px;
-    /* border: 6px solid #819171; */
+    border: 6px solid #fffdf3;
 }
 
 img.circle {
@@ -66,7 +74,7 @@ img.circle {
     border-radius: 999px;
     border: 6px solid #819171;
     background-color: #fffdf3;
-    width: 70%;
+    width: 60%;
 }
 
 
@@ -74,7 +82,7 @@ img.circle {
 
 #nav-menu {
     background-color: #fffdf3;
-    padding: 12px 12px 1rem;
+    padding: 12px 24px 1rem;
     display: flex;
     justify-content: right;
     position: sticky;
@@ -162,17 +170,14 @@ img.nav-logo {
     margin: 0 auto;
     padding: 20px 20px;
 
-    background-color: #394c39;
+    background-color: #995546;
     box-shadow: 0 0 36px -12px rgba (96, 108, 83, 0.35);
 }
 
 .container2 {
-    display: grid;
-    grid-gap: 1.5em;
-    grid-template-columns: repeat(12, 1fr);
-    width: min(95%, 75em);
-    margin: 0 auto;
-    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 .container3 {
@@ -195,9 +200,140 @@ img.nav-logo {
 /* Footer */
 .footer {
     padding: 12px 12px 1rem;
-    background-color: #5e7a5e;
+    background-color: #995546;
     margin-top: 20px;
 }
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+  }
+  
+.footer-text {
+    color: #ffffff;
+    text-align: left;
+  }
+
+.footer-text h1 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    font-weight: bold;
+  }
+  
+.instagram-handle {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+.insta-icon {
+    height: 30px;
+    width: 30px;
+  }
+
+.instagram-handle span {
+    font-family: 'Oooh Baby', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  /****** Contact Section ******/
+
+.contact-section {
+    background-color: #394B39; /* Dark green background */
+    color: #fffdf3;
+    padding: 3rem 2rem;
+  }
+  
+  img.contact-section {
+    width: 100%;
+  }
+
+  .contact-header {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+  }
+  
+  .contact-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-header p {
+    font-size: 1rem;
+    color: #fffdf3;
+  }
+  
+  .contact-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .form-left,
+  .form-right {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  input, textarea {
+    background-color: #fffdf3;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    width: 100%;
+    resize: vertical;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+
+  .form-submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  button {
+    background-color: #fffdf3;
+    color: #394B39;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #cccccc;
+    transform: scale(1.05);
+  }
+  
 
 /* Card styles */
 .card {
@@ -213,11 +349,13 @@ img.nav-logo {
 .card-title {
     padding: 0 2rem;
     text-align: center;
+    color: #394c39;
 }
 
 .card-text {
     padding: 0 2rem;
-    text-align: center;
+    text-align: left;
+    color: #394c39;
 }
 
 /* Button Styles */
@@ -249,6 +387,8 @@ a.button:active {
     background-color: #485f48;
 }
 
+
+
 /* Desktop Layout */
 
 @media (min-width: 40em) {
@@ -262,10 +402,34 @@ a.button:active {
     a.button {
         display: inline-block;
     }
+    .col-span-12 {
+        grid-column: span 12;
+    }
     .col-span-8 {
         grid-column: span 8;
     }
     .col-span-4 {
         grid-column: span 4;
+        justify-content: center;
+    }
+
+    .episodes-section {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .card {
+        flex: 0 1 324px;
+    }
+}
+
+
+/* Mobile Functionality */
+@media (max-width: 40em) {
+
+    #nav-menu ul.active {
+        display: flex;
+        flex-direction: column;
     }
 }
