@@ -10,25 +10,33 @@ $(".slider").slick({
   // normal options...
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 5000
-  pauseOnfocus: false
+  autoplaySpeed: 5000,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  centerMode: true,
+  centerPadding: '50px',
+  slidesToShow: 3,
+  dots: true,
 
   // the magic
   responsive: [{
 
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        infinite: true
-        autoplay: true
+        slidesToShow: 2,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000
       }
 
     }, {
 
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        dots: true
+        slidesToShow: 1,
+        dots: true,
+        autoplay: true
       }
 
     }, {

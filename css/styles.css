@@ -56,6 +56,9 @@ aside {
     padding-top: 20;
 }
 
+p {
+    font-weight: 300;
+}
 /****** Images ******/
 
 img {
@@ -63,7 +66,10 @@ img {
 }
 
 img.home {
-    object-fit: fill;
+    object-fit:fill;
+    width: auto;
+    height: 400px;
+    object-position: bottom center;
     border-radius: 0px;
     border: 6px solid #fffdf3;
 }
@@ -74,8 +80,9 @@ img.circle {
     border-radius: 999px;
     border: 6px solid #819171;
     background-color: #fffdf3;
-    width: 60%;
+    width: 200px;
 }
+
 
 
 /****** Navigation ******/
@@ -87,6 +94,8 @@ img.circle {
     justify-content: right;
     position: sticky;
     top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 24px -8px rgb(153, 85, 70, 0.5);
 }
 
 #nav-menu ul {
@@ -157,8 +166,9 @@ img.circle {
 }
 
 img.nav-logo {
-    width: 30%;
+    height: 50px;
     margin-right: auto;
+    width: auto;
 }
 
 /****** Layout ******/
@@ -186,7 +196,7 @@ img.nav-logo {
     grid-template-columns: repeat(12, 1fr);
     width: min(95%, 75em);
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 40px 60px;
 
     background-color: #394c39;
     box-shadow: 0 0 36px -12px rgba (96, 108, 83, 0.35);
@@ -236,7 +246,7 @@ img.nav-logo {
   }
   
 .insta-icon {
-    height: 30px;
+    height: auto;
     width: 30px;
   }
 
@@ -364,7 +374,40 @@ img.nav-logo {
     padding: 0 2rem;
     text-align: left;
     color: #394c39;
+    font-size: 14px;
 }
+
+/* HOME Card styles */
+.home-card {
+    background-color: #fff;
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 24px -8px rgba(0, 0, 0, 0.5);
+    border-radius: 18px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.home-card-title {
+    padding: 0 2rem;
+    text-align: center;
+    color: #394c39;
+}
+
+.home-card-text {
+    padding: 0 2rem;
+    text-align: left;
+    color: #394c39;
+    font-size: 14px;
+}
+
+.home-card img {
+    height: 200px;
+    width: auto;
+    padding: 15px 15px;
+}
+
 
 /* Button Styles */
 
@@ -421,12 +464,6 @@ a.button:active {
         justify-content: center;
     }
 
-    .episodes-section {
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-    }
-
     .card {
         flex: 0 1 324px;
     }
@@ -435,15 +472,18 @@ a.button:active {
 
 /* Slick Slider */
 .slider {
-    height: 640px;
-    overflow: hidden;
+    /* height: 640px; */
+    /* overflow: hidden; */
+    justify-content: center;
 }
 
 .slider img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    /* padding: 2rem 2rem; */
     object-fit: cover;
     object-position: bottom center;
+    box-shadow: 0 2px 24px -8px rgb(153, 85, 70, 0.5);
 }
 
 .slick-slide > div {
